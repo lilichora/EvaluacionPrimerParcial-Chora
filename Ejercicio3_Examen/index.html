@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios Web Components</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyD8hDP1e4f6u3I1IekFFL9J7bo2lgseeJ" crossorigin="anonymous">
+
+    <script src="slot.js"></script>
+
+    <style>
+        body {
+            background-color: #f8f9fa; /* Set a light background color for the body */
+            font-family: 'Arial', sans-serif; /* Change the font family */
+            color: #333; /* Set the text color */
+            margin: 20px; /* Add some margin for spacing */
+        }
+
+        center {
+            margin-bottom: 20px; /* Add margin to the center element */
+        }
+
+        h1, h2, h3, h4 {
+            color: #007bff; /* Set the color for heading elements */
+        }
+
+        contenedor-component {
+            display: block; /* Ensure the custom element is displayed as a block */
+            margin-top: 20px; /* Add top margin for spacing */
+            padding: 10px; /* Add padding to the custom element */
+            background-color: #e9ecef; /* Set a light background color for the custom element */
+            border-radius: 5px; /* Add border-radius for rounded corners */
+        }
+
+        [slot="header"] {
+            font-weight: bold; /* Make the header text bold */
+        }
+
+        [slot="content"] {
+            font-style: italic; /* Make the content text italic */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <center>
+        <h1>Universidad de las Fuerzas Armadas ESPE</h1>
+        <h2>Programacion Integrativa de Componentes WEB</h2>
+        <h3>Evaluacion Primer Parcial</h3>
+        <h3>Liliana Chora</h3>
+        <h1>EJERCICIO 3</h1>
+        <h4>NRC: 14386</h4>
+    </center>
+
+    <contenedor-component>
+        <div slot="header">Programacion Integrativa de Componentes WEB</div>
+        <div slot="content">Implementacion de SLOTS</div>
+    </contenedor-component>
+
+    
+
+</body>
+
+</html>
